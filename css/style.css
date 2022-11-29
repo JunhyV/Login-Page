@@ -1,0 +1,149 @@
+:root{
+    --font: 'Inter', sans-serif;
+    --blue: #2F80ED;
+    --gray: #828282;
+    --black: #333;
+    --dark: #000;
+    --border: #DDD;
+    --purple: #684BB1;
+    --white: #FFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-content{
+    font-family: var(--font);
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+    color: var(--black);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+h1{
+    font-size: 52px;
+    margin: 1%;
+}
+.mini-logo{
+    padding: 1vw;
+}
+.justify{
+    text-align: justify;
+}
+.box-size{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.or-size{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.line{
+    width: 45%;
+    margin: 10%;
+    height: 1px;
+    background-color: var(--border);
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.margin{
+    margin: 10px;
+}
+/*inputs*/
+input{
+    height: 50%;
+    border: solid var(--border) 1px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 0 0 7% 0 ;
+}
+input:hover{
+    border: solid 1px var(--purple);
+}
+
+/*BUTTON*/
+button{
+    width: 100%;
+    height: 50%;
+    border: solid var(--border) 1px;
+    border-radius: 3px;
+    margin: 2% 0;
+}
+button[class="flex"]{
+    background-color: var(--white);
+}
+button[name="login"]{
+    background-color: var(--blue);
+    color: var(--white);
+}
+button:hover, button:active{
+    cursor: pointer;
+    border: var(--purple) solid 1px;
+    font-weight: bold;
+}
+
+/*LINKS*/
+
+#black:visited, #black:link{
+    color: var(--dark);
+}
+#blue:visited, #blue:link{
+    color: var(--blue);
+}
+#blue:hover, #black:hover{
+    color: var(--purple);
+}
+
+@media (min-width: 900px) {
+    .imagen{
+    background-image: url(../img/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 45vw;
+    height: 100vh;
+    }
+    .box-size{
+        width: 60%;
+        height: 12%;
+    }
+    .or-size{
+        width: 60%;
+        height: 12%;
+    }
+    .div-content{
+        width: 55vw;
+        height: 100vh;
+    }
+
+}
+@media (max-width: 900px) {
+    .box-size{
+        width: 80%;
+        height: 13%;
+    }
+    .or-size{
+        width: 80%;
+        height: 13%;
+    }
+    .div-content{
+        height: 100vh;
+        width: 80vw;
+    }
+}
